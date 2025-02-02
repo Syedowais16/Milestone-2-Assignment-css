@@ -1,0 +1,114 @@
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #ff6a95);
+    padding: 20px;
+  }
+
+  .formWrapper {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .formWrapper:hover {
+    transform: scale(1.03);
+  }
+  
+  .formWrapper h1 {
+    font-size: 32px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+  }
+  
+  .formWrapper p {
+    font-size: 16px;
+    color: #fce4ec;
+    margin-bottom: 20px;
+  }
+  
+  .inputField,
+  .textArea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .inputField::placeholder,
+  .textArea::placeholder {
+    color: #fce4ec;
+    opacity: 0.8;
+  }
+  
+  .inputField:focus,
+  .textArea:focus {
+    border-color: #ffeb3b;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #ffeb3b;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .submitButton:hover {
+    background: #ffdb00;
+    transform: scale(1.05);
+  }
+  
+  .submitButton:active {
+    background: #ffeb3b;
+    transform: scale(0.98);
+  }
+  
+  @media (max-width: 480px) {
+    .formWrapper {
+      width: 100%;
+      padding: 30px;
+    }
+  
+    .formWrapper h1 {
+      font-size: 28px;
+    }
+  
+    .formWrapper p {
+      font-size: 14px;
+    }
+  
+    .inputField,
+    .textArea {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .submitButton {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  

@@ -1,0 +1,82 @@
+.productContainer {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff6a95);
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .productContainer h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .productList {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .productCard {
+    width: 270px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .productCard:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .productCard::after {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    top: -30px;
+    left: -20px;
+    transform: rotate(-15deg);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .productCard:hover::after {
+    top: -10px;
+  }
+  
+  .productCard img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 3px solid #ff6a95;
+  }
+  
+  .productCard h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ff4081;
+  }
+  
+  .productCard p {
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+    background: #ff4081;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+  }
+  
